@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/Jenkins-GitHub-Windows.git'
+                git credentialsId: 'Jenkins-GitHub-Integration', url: 'https://github.com/your-username/Jenkins-GitHub-Windows.git', branch: 'main'
             }
         }
         stage('Run Script') {
