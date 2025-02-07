@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run Script') {
             steps {
-                bat 'script.bat' // Change this to 'sh script.sh' if using Linux
+                bat 'script.bat'
             }
         }
         stage('Archive Output') {
